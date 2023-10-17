@@ -2366,7 +2366,7 @@
       defaultValue: $$generate_username
       description: ''
 - templateVersion: 1.0.0
-  defaultVersion: 0.198.1
+  defaultVersion: 1.11.1
   type: n8n
   name: n8n.io
   description: n8n is a free and open node based Workflow Automation Tool.
@@ -2377,7 +2377,7 @@
       depends_on: []
       image: 'n8nio/n8n:$$core_version'
       volumes:
-        - '$$id-data:/root/.n8n'
+        - '$$id-data:/home/node/.n8n'
         - '$$id-data-write:/files'
         - '/var/run/docker.sock:/var/run/docker.sock'
       environment:

@@ -1,5 +1,5 @@
 templateVersion: 1.0.0
-defaultVersion: 1.5.1
+defaultVersion: 1.11.1
 documentation: https://docs.n8n.io
 type: n8n
 name: n8n.io
@@ -16,7 +16,6 @@ services:
     depends_on: []
     image: n8nio/n8n:$$core_version
     volumes:
-      - $$id-data:/root/.n8n
       - $$id-data:/home/node/.n8n
       - $$id-data-write:/files
       - /var/run/docker.sock:/var/run/docker.sock
